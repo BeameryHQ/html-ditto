@@ -1,0 +1,26 @@
+{
+  "name": "html-ditto",
+  "version": "1.0.0",
+  "description": "HTML to JSON shape-shifter 👻",
+  "main": "ditto/ditto.js",
+  "scripts": {
+    "test": "mocha test/index.js",
+    "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js",
+    "cover": "NODE_ENV=test istanbul cover _mocha -- -R spec test/index.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:BeameryHQ/Ditto.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "ditto-plugins": "^1.0.0",
+    "lodash": "^4.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "mocha": "^6.0.2"
+  }
+}
