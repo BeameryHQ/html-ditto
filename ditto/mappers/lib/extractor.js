@@ -2,7 +2,7 @@
 const _  = require('lodash');
 
 const comparator = require('./comparator');
-const cheerioExtractor = require('./extractors/cheerio');
+const extractors = require('./extractors');
 
 module.exports = class Extractor {
 
@@ -35,7 +35,7 @@ module.exports = class Extractor {
             let pathWithDefault = path.split(/\|\|/);
             return extractor.extract(document, pathWithDefault[0], output) ||
             extractor.extract(document, `${pathWithDefault[1]}`, output);
-        } else return cheerioExtractor(document, path);
+        } else return extractors.cheerio(document, path);
     }
 
 }
