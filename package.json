@@ -1,6 +1,6 @@
 {
   "name": "html-ditto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTML to JSON shape-shifter 👻",
   "main": "ditto/ditto.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:BeameryHQ/Ditto.git"
+    "url": "git+https://github.com:BeameryHQ/html-ditto.git"
   },
   "license": "ISC",
   "dependencies": {
