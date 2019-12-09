@@ -1,8 +1,8 @@
 {
   "name": "html-ditto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HTML to JSON shape-shifter 👻",
-  "main": "ditto/ditto.js",
+  "main": "ditto/index.js",
   "scripts": {
     "test": "mocha test/index.js",
     "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js",
